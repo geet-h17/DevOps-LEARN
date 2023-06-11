@@ -1,0 +1,34 @@
+    1  sudo su
+    2  apt install snort
+    3  sudo su
+    4  sudo apt get update
+    5  sudo apt update
+    6  sudo service packagekit restart
+    7  sudo apt update
+    8  sudo apt install openjdk-8-jdk -y
+    9  sudo dpkg --configure -a
+   10  sudo apt install openjdk-8-jdk -y
+   11  ifconfig
+   12  sudo apt install openjdk-8-jdk -y
+   13  sudo apt install maven -y
+   14  sudo apt install awscli -y
+   15  git clone https://github.com/devopshydclub/vprofile-project
+   16  sudo apt install git
+   17  git clone https://github.com/devopshydclub/vprofile-project
+   18  git clone https://github.com/devopshydclub/vprofile-project\
+   19  git clone https://github.com/devopshydclub/vprofile-project
+   20  ls
+   21  cd vprofile-project/
+   22  ls
+   23  mvn install
+   24  ls
+   25  cd target/
+   26  ls
+   27  aws
+   28  aws config
+   29  aws configure
+   30  aws s3 mb s3://h17profile-artifact-storage
+   31  ls
+   32  aws s3 cp vprofile-v2.war s3://h17profile-artifact-storage/vprofile-v2.war
+   33  aws s3 ls s3://h17profile-artifact-storage/
+   34  history >> cmds.txt

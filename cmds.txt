@@ -1,0 +1,500 @@
+   14  cd maven/
+   15  ls
+   16  vim pom.xml 
+   17  git init
+   18  ls
+   19  git status
+   20  git add.
+   21  git add .
+   22  git commit -m "pom file updated"
+   23  ls
+   24  git push origin master
+   25  git push origin main
+   26  git remote -v
+   27  git config --global user.email "mailmeatgeet@gmail.com"
+   28  git config --global user.name "geet-h17"
+   29  git status
+   30  ls
+   31  vim pom.xml 
+   32  git status
+   33  git remote add origin git@github.com:geet-h17/maven.git
+   34  git branch -m main
+   35  git push -u origin main 
+   36  vim pom.xml 
+   37  vim pom.xml 
+   38  vim pom.xml 
+   39  git status
+   40  git add .
+   41  git commit -m "pm file updated"
+   42  git push origin main
+   43  cd ../..
+   44  mkdir build/
+   45  cd build/
+   46  git clone https://github.com/devopshydclub/vprofile-repo.git
+   47  ls
+   48  git clone https://github.com/devopshydclub/vprofile-repo.git
+   49  git clone https://github.com/devopshydclub/vprofile-repo.git
+   50  ls
+   51  top
+   52  ls
+   53  cd
+   54  cd e
+   55  ls
+   56  cd e
+   57  cd /e
+   58  ls
+   59  cd vagrant-vms/
+   60  ls
+   61  cd ubuntu18/
+   62  vagrant up
+   63  pwd
+   64  sudo -i
+   65  vagrant ssh
+   66  vagrant ssh
+   67  vagrant halt
+   68  cd ..
+   69  cd ..
+   70  cd ..
+   71  #!/bin/bash
+   72  # Variable Declaration
+   73  #PACKAGE="httpd wget unzip"
+   74  #SVC="httpd"
+   75  URL='https://www.tooplate.com/zip-templates/2098_health.zip'
+   76  ART_NAME='2098_health'
+   77  TEMPDIR="/tmp/webfiles"
+   78  yum --help &> /dev/null
+   79  if [ $? -eq 0 ]; then
+   80     PACKAGE="httpd wget unzip";    SVC="httpd"    echo "Running Setup on CentOS"
+   81     echo "########################################";    echo "Installing packages.";    echo "########################################";    sudo yum install $PACKAGE -y > /dev/null;    echo
+   82     echo "########################################";    echo "Start & Enable HTTPD Service";    echo "########################################";    sudo systemctl start $SVC;    sudo systemctl enable $SVC;    echo
+   83     echo "########################################";    echo "Starting Artifact Deployment";    echo "########################################";    mkdir -p $TEMPDIR;    cd $TEMPDIR;    echo    wget $URL > /dev/null;    unzip $ART_NAME.zip > /dev/null;    sudo cp -r $ART_NAME/* /var/www/html/;    echo
+   84     echo "########################################";    echo "Restarting HTTPD service";    echo "########################################";    systemctl restart $SVC;    echo
+   85     echo "########################################";    echo "Removing Temporary Files";    echo "########################################";    rm -rf $TEMPDIR;    echo    sudo systemctl status $SVC;    ls /var/www/html/ else
+   86     PACKAGE="apache2 wget unzip";    SVC="apache2"    echo "Running Setup on CentOS"
+   87     echo "########################################";    echo "Installing packages.";    echo "########################################";    sudo apt update;    sudo apt install $PACKAGE -y > /dev/null;    echo
+   88     echo "########################################";    echo "Start & Enable HTTPD Service";    echo "########################################";    sudo systemctl start $SVC;    sudo systemctl enable $SVC;    echo
+   89     echo "########################################";    echo "Starting Artifact Deployment";    echo "########################################";    mkdir -p $TEMPDIR;    cd $TEMPDIR;    echo    wget $URL > /dev/null;    unzip $ART_NAME.zip > /dev/null;    sudo cp -r $ART_NAME/* /var/www/html/;    echo
+   90     echo "########################################";    echo "Restarting HTTPD service";    echo "########################################";    systemctl restart $SVC;    echo
+   91     echo "########################################";    echo "Removing Temporary Files";    echo "########################################";    rm -rf $TEMPDIR;    echo    sudo systemctl status $SVC;    ls /var/www/html/; fi 
+   92  cd c
+   93  cd Down
+   94  ls
+   95  cd Users/
+   96  ls
+   97  cd h17cy/
+   98  ls
+   99  cd Downloads/
+  100  ls
+  101  cd multios_websetup.sh 
+  102  cat multios_websetup.sh 
+  103  cd e
+  104  ls
+  105  mkdir cyber-100
+  106  git remote add origin git@github.com:geet-h17/cyber-100.git
+  107  git init
+  108  cd cyber-100/
+  109  git init
+  110  git remote add origin git@github.com:geet-h17/cyber-100.git
+  111  git branch -M main
+  112  git push -u origin main
+  113  cd e
+  114  ssh ubuntu@44.205.253.233
+  115  ssh -i web01-key.pem ubuntu@44.205.253.233
+  116  which aws
+  117  aws configure
+  118  aws s3 ls
+  119  aws ec2 ls
+  120  terminate instances
+  121  aws terminate instances
+  122  aws ec2
+  123  aws ec2 help
+  124  aws ec2 terminate-instances
+  125  aws ec2 terminate-instances
+  126  aws ec2-terminate-instances
+  127  aws ec2 terminate-instances --instance-ids i-0f4676c1d0298ae09
+  128  #!/bin/bash
+  129  # Variable Declaration
+  130  #PACKAGE="httpd wget unzip"
+  131  #SVC="httpd"
+  132  URL='https://www.tooplate.com/zip-templates/2098_health.zip'
+  133  ART_NAME='2098_health'
+  134  TEMPDIR="/tmp/webfiles"
+  135  yum --help &> /dev/null
+  136  if [ $? -eq 0 ]; then
+  137     PACKAGE="httpd wget unzip";    SVC="httpd"    echo "Running Setup on CentOS"
+  138     echo "########################################";    echo "Installing packages.";    echo "########################################";    sudo yum install $PACKAGE -y > /dev/null;    echo
+  139     echo "########################################";    echo "Start & Enable HTTPD Service";    echo "########################################";    sudo systemctl start $SVC;    sudo systemctl enable $SVC;    echo
+  140     echo "########################################";    echo "Starting Artifact Deployment";    echo "########################################";    mkdir -p $TEMPDIR;    cd $TEMPDIR;    echo    wget $URL > /dev/null;    unzip $ART_NAME.zip > /dev/null;    sudo cp -r $ART_NAME/* /var/www/html/;    echo
+  141     echo "########################################";    echo "Restarting HTTPD service";    echo "########################################";    systemctl restart $SVC;    echo
+  142     echo "########################################";    echo "Removing Temporary Files";    echo "########################################";    rm -rf $TEMPDIR;    echo    sudo systemctl status $SVC;    ls /var/www/html/ else
+  143     PACKAGE="apache2 wget unzip";    SVC="apache2"    echo "Running Setup on CentOS"
+  144     echo "########################################";    echo "Installing packages.";    echo "########################################";    sudo apt update;    sudo apt install $PACKAGE -y > /dev/null;    echo
+  145     echo "########################################";    echo "Start & Enable HTTPD Service";    echo "########################################";    sudo systemctl start $SVC;    sudo systemctl enable $SVC;    echo
+  146     echo "########################################";    echo "Starting Artifact Deployment";    echo "########################################";    mkdir -p $TEMPDIR;    cd $TEMPDIR;    echo    wget $URL > /dev/null;    unzip $ART_NAME.zip > /dev/null;    sudo cp -r $ART_NAME/* /var/www/html/;    echo
+  147     echo "########################################";    echo "Restarting HTTPD service";    echo "########################################";    systemctl restart $SVC;    echo
+  148     echo "########################################";    echo "Removing Temporary Files";    echo "########################################";    rm -rf $TEMPDIR;    echo    sudo systemctl status $SVC;    ls /var/www/html/; fi 
+  149  #!/bin/bash
+  150  # Variable Declaration
+  151  #PACKAGE="httpd wget unzip"
+  152  #SVC="httpd"
+  153  URL='https://www.tooplate.com/zip-templates/2098_health.zip'
+  154  ART_NAME='2098_health'
+  155  TEMPDIR="/tmp/webfiles"
+  156  yum --help &> /dev/null
+  157  if [ $? -eq 0 ]; then
+  158     PACKAGE="httpd wget unzip";    SVC="httpd"    echo "Running Setup on CentOS"
+  159     echo "########################################";    echo "Installing packages.";    echo "########################################";    sudo yum install $PACKAGE -y > /dev/null;    echo
+  160     echo "########################################";    echo "Start & Enable HTTPD Service";    echo "########################################";    sudo systemctl start $SVC;    sudo systemctl enable $SVC;    echo
+  161     echo "########################################";    echo "Starting Artifact Deployment";    echo "########################################";    mkdir -p $TEMPDIR;    cd $TEMPDIR;    echo    wget $URL > /dev/null;    unzip $ART_NAME.zip > /dev/null;    sudo cp -r $ART_NAME/* /var/www/html/;    echo
+  162     echo "########################################";    echo "Restarting HTTPD service";    echo "########################################";    systemctl restart $SVC;    echo
+  163     echo "########################################";    echo "Removing Temporary Files";    echo "########################################";    rm -rf $TEMPDIR;    echo    sudo systemctl status $SVC;    ls /var/www/html/ else
+  164     PACKAGE="apache2 wget unzip";    SVC="apache2"    echo "Running Setup on CentOS"
+  165     echo "########################################";    echo "Installing packages.";    echo "########################################";    sudo apt update;    sudo apt install $PACKAGE -y > /dev/null;    echo
+  166     echo "########################################";    echo "Start & Enable HTTPD Service";    echo "########################################";    sudo systemctl start $SVC;    sudo systemctl enable $SVC;    echo
+  167     echo "########################################";    echo "Starting Artifact Deployment";    echo "########################################";    mkdir -p $TEMPDIR;    cd $TEMPDIR;    echo    wget $URL > /dev/null;    unzip $ART_NAME.zip > /dev/null;    sudo cp -r $ART_NAME/* /var/www/html/;    echo
+  168     echo "########################################";    echo "Restarting HTTPD service";    echo "########################################";    systemctl restart $SVC;    echo
+  169     echo "########################################";    echo "Removing Temporary Files";    echo "########################################";    rm -rf $TEMPDIR;    echo    sudo systemctl status $SVC;    ls /var/www/html/; fi 
+  170  cd e
+  171  ls
+  172  ssh -i wave-cafe-key.pem ec2-user@52.72.70.94
+  173  ssh -i wave-cafe-key.pem ec2-user@52.72.70.94
+  174  cd
+  175  cd e
+  176  cd f
+  177  cd e
+  178  cd d
+  179  cd e 4
+  180  clear
+  181  ls
+  182  cd ..
+  183  cd ..
+  184  cd ..
+  185  ls
+  186  cd e
+  187  ls
+  188  ls
+  189  ssh -i "health-key-temp.pem" ec2-user@ec2-3-91-61-128.compute-1.amazonaws.com
+  190  cd e
+  191  ls
+  192  cd /etc/hosts
+  193  cd /etc/
+  194  cd hosts
+  195  cd..
+  196  cd..
+  197  cd ..
+  198  ls
+  199  cd e
+  200  ls
+  201  ssh -i sec-ops.pem ubuntu@34.205.24.153
+  202  ssh -i sec-ops.pem ubuntu@34.205.24.153
+  203  sudo vi /etc/ssh/sshd_config 
+  204  vi /etc/ssh/sshd_config 
+  205  sudo -i
+  206  chmod
+  207  chmod 0700 sec-ops.pem 
+  208  chmod 0700 sec-ops.pem u+w
+  209  ssh -i "sec-ops.pem" ec2-user@ec2-34-205-24-153.compute-1.amazonaws.com
+  210  ssh -i sec-ops.pem ubuntu@44.204.38.144
+  211  cd e
+  212  ssh -i sec-ops.pem ubuntu@3.91.249.254
+  213  cd e
+  214  ssh -i sec-ops.pem ubuntu@54.91.18.199
+  215  cd e
+  216  ls
+  217  ssh -i sec-ops.pem ubuntu@54.82.93.136
+  218  ssh -i sec-ops.pem ubuntu@54.89.251.77
+  219  ssh -i sec-ops.pem ubuntu@54.89.251.77
+  220  cd c
+  221  ls
+  222  cd Users/
+  223  ls
+  224  cd h17cy/
+  225  ls
+  226  cd Downloads/
+  227  ls
+  228  mkdir game
+  229  cd makdir
+  230  cd game
+  231  git clone https://github.com/gitgiter/unity3d-learning
+  232  ls
+  233  git clone https://github.com/gitgiter/unity3d-learning
+  234  ls
+  235  ssh h17cyborg@192.168.224.130
+  236  ssh h17cyborg@localhost
+  237  ssh h17cyborg@192.168.224.130
+  238  apt-get install docker.io
+  239  ls
+  240  cd ..
+  241  ls
+  242  cd c
+  243  ls
+  244  cd Down
+  245  cd Users/
+  246  ls
+  247  cd h17cy/
+  248  ls
+  249  cd ..
+  250  cd ..
+  251  cd ..
+  252  cd e
+  253  ls
+  254  ssh -i rds-vprofile.pem ubuntu@54.88.79.221
+  255  aws
+  256  aws version
+  257  aws config
+  258  aws configure
+  259  ./aws
+  260  cd /.aws
+  261  .aws
+  262  ls /.aws
+  263  aws s3 ls
+  264  cd e
+  265  ls
+  266  mkdir keys
+  267  mv wave-cafe-key.pem /keys
+  268  mv wave-cafe-key.pem keys/
+  269  mv sec-ops.pem keys/
+  270  mv *.pem keys/
+  271  ls
+  272  cd keys
+  273  ls
+  274  ssh -i rds-vprofile.pem ubuntu@3.80.115.67
+  275  cd ..
+  276  ls
+  277  mkdir github_project
+  278  cd git
+  279  cd github_project/
+  280  ls
+  281  curl --version
+  282  vim token
+  283  vim git-prj.sh
+  284  chmod u+x git-prj.sh 
+  285  ./git-prj.sh 
+  286  vim token
+  287  $pass = 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
+  288  $pass == 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
+  289  export $pass=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
+  290  export PASS=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
+  291  vim token $PASS
+  292  ./git-prj.sh $PASS
+  293  ./git-prj.sh $PASS /users
+  294  ./git-prj.sh sgubfnknqk /users
+  295  ./git-prj.sh $PASS /use
+  296  ./git-prj.sh $PASS /organizations
+  297  ./git-prj.sh $PASS /users
+  298  cd e
+  299  ls
+  300  mkdir AWS-VPROFILE
+  301  CD AWS-VPROFILE/
+  302  cd AWS-VPROFILE/
+  303  cd ..
+  304  mv vprofile-PROD-key.pem /AWS-VPROFILE
+  305  mv vprofile-PROD-key.pem AWS-VPROFILE/
+  306  cd AWS-VPROFILE/
+  307  ls
+  308  cd ../..
+  309  cd e
+  310  ls
+  311  cd vprofile-project/
+  312  ls
+  313  git checkout aws-lifyandshift
+  314  git checkout aws-liftandshift
+  315  git checkout aws-LiftAndShift
+  316  git stage
+  317  git add .
+  318  cd ..
+  319  rm -rf vprofile-project/
+  320  git clone https://github.com/devopshydclub/vprofile-project
+  321  cd vprofile-project/
+  322  ls
+  323  git checkout aws-LiftAndShift
+  324  ls
+  325  cd src/
+  326  ls
+  327  cd ..
+  328  ls
+  329  cd userdata/
+  330  ls
+  331  cd ~
+  332  cd e
+  333  cd e
+  334  ls
+  335  cd ..
+  336  cd ..
+  337  cd ..
+  338  cd e
+  339  ls
+  340  ssh -i AWS-VPROFILE/vprofile-PROD-key.pem centos@54.173.13.237
+  341  ifconfig
+  342  ipconfig
+  343  ip addr show
+  344  ssh -i AWS-VPROFILE/vprofile-PROD-key.pem centos@54.173.13.237
+  345  ssh -i AWS-VPROFILE/vprofile-PROD-key.pem centos@54.173.13.237
+  346  cd e
+  347  ls
+  348  mkdir scripting_s3_event_trigger
+  349  cd script
+  350  cd scripting_s3_event_trigger/
+  351  ls
+  352  vim s3-notification-triggers.sh
+  353  aws s3 ls
+  354  gitclone https://github.com/iam-veeramalla/shell-scripting-projects/tree/main
+  355  git clone https://github.com/iam-veeramalla/shell-scripting-projects/tree/main
+  356  git clone https://github.com/iam-veeramalla/shell-scripting-projects
+  357  ls
+  358  cd shell-scripting-projects/
+  359  ls
+  360  ls
+  361  cd aws-event-triggering/
+  362  ls
+  363  vim s3-notification-triggers.sh 
+  364  ./s3-notification-triggers.sh 
+  365  vim s3-notification-triggers.sh 
+  366  ./s3-notification-triggers.sh 
+  367  ./s3-notification-triggers.sh 
+  368  vim s3-notification-triggers.sh 
+  369  ls
+  370  cd s3-lambda-function/
+  371  ls
+  372  vim s3-lambda-function.py 
+  373  sudo apt-get install jq
+  374  apt-get install jq
+  375  curl -L -o /usr/bin/jq.exe https://github.com/stedolan/jq/releases/latest/download/jq-win64.exe
+  376  sudo curl -L -o /usr/bin/jq.exe https://github.com/stedolan/jq/releases/latest/download/jq-win64.exe
+  377  curl -L -o /usr/bin/jq.exe https://github.com/stedolan/jq/releases/latest/download/jq-win64.exe
+  378  cd e
+  379  ls
+  380  cd scripting_s3_event_trigger/
+  381  ls
+  382  cd s3-notification-triggers.sh 
+  383  cd shell-scripting-projects/
+  384  ls
+  385  cd aws-event-triggering/
+  386  ls
+  387  ./s3-notification-triggers.sh 
+  388  ls
+  389  cd ..
+  390  ls
+  391  cp aws-event-triggering/* /project/
+  392  cp aws-event-triggering/* project/
+  393  cp aws-event-triggering/* project
+  394  cp aws-event-triggering/* project/
+  395  cp aws-event-triggering/* /project
+  396  cp aws-event-triggering/* /e/scripting_s3_event_trigger/project
+  397  cp -r aws-event-triggering/* /e/scripting_s3_event_trigger/project
+  398  ls
+  399  cd aws-event-triggering/
+  400  ls
+  401  cd ..
+  402  cd ..
+  403  ls
+  404  cd project/
+  405  ls
+  406  ./s3-notification-triggers.sh 
+  407  cd e
+  408  ls
+  409  cd scripting_s3_event_trigger/
+  410  ls
+  411  mkdir project
+  412  ls
+  413  cp aws-event-triggering/* project
+  414  cp /aws-event-triggering/* project
+  415  cp /aws-event-triggering project
+  416  cp aws-event-triggering project
+  417  ls
+  418  cd project/
+  419  pwd
+  420  cd ..
+  421  cd ..
+  422  ls
+  423  cd vprofile-project/
+  424  ls
+  425  cd userdata/
+  426  ls
+  427  cd ~
+  428  cd e
+  429  ls
+  430  cd ..
+  431  cd ..
+  432  cd ..
+  433  cd e
+  434  ls
+  435  cd vprofile-project/
+  436  ls
+  437  cd ..
+  438  cd AWS-VPROFILE/
+  439  ls
+  440  ssh -i vprofile-PROD-key.pem centos7@3.84.79.245
+  441  ssh -i vprofile-PROD-key.pem centos7@3.84.79.245
+  442  ssh -i vprofile-PROD-key.pem centos7@3.84.79.245
+  443  cd e
+  444  ls
+  445  cd AWS-VPROFILE/
+  446  LS
+  447  ssh -i vprofile-PROD-key.pem centos7@3.88.167.166
+  448  ssh -i vprofile-PROD-key.pem centos7@3.88.167.166
+  449  sudo nano /etc/ssh/sshd_config
+  450   nano /etc/ssh/sshd_config
+  451  ssh -i vprofile-PROD-key.pem centos7@3.88.167.166
+  452  ssh -i vprofile-PROD-key.pem centos7@172.31.26.214
+  453  ssh -i vprofile-PROD-key.pem centos7@3.88.167.166
+  454  ssh -i "vprofile-PROD-key.pem" centos@ec2-3-88-167-166.compute-1.amazonaws.com
+  455  ssh -i vprofile-keys.pem centos7@3.87.13.7
+  456  ssh -i "vprofile-keys.pem" centos@ec2-3-87-13-7.compute-1.amazonaws.com
+  457  ssh -i vprofile-keys.pem centos@3.85.193.238
+  458  exit
+  459  cd e
+  460  ls
+  461  cd vprofile-project/
+  462  ls
+  463  cd src
+  464  cd main
+  465  ls
+  466  cd resources/
+  467  ls
+  468  vim application.properties 
+  469  cd ..
+  470  cd ..
+  471  cd ..
+  472  ls
+  473  mvn install
+  474  mvn install
+  475  mvn install
+  476  mvn install
+  477  cd e
+  478  ls
+  479  cd vprofile-project/
+  480  ls
+  481  mvn install
+  482  mvn install
+  483  mvn install
+  484  cd e
+  485  ls
+  486  cd vprofile-project/
+  487  ls
+  488  mvn install
+  489  mvn install
+  490  cd e
+  491  ls
+  492  cd vprofile-project/
+  493  ls
+  494  mvn install
+  495  mvn install
+  496  ls
+  497  cat pom.xml 
+  498  mvn install
+  499  mvn install
+  500  mvn install
+  501  cd e
+  502  ls
+  503  cd avp
+  504  cd vprofile-project/
+  505  ls
+  506  mvn install
+  507  mvn -X install
+  508  mvn install
+  509  cd ..
+  510  cd AWS-VPROFILE/
+  511  ssh -i vprofile-keys.pem ubuntu@3.83.51.11
+  512  history
+  513  history >> cmds.txt
